@@ -58,9 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0;
   }
 }
 
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   font-size: 24px;
   transition: all 0.4s;
-  outline: none !important;
+  outline: none ;
   line-height: 1;
   cursor: pointer;
   text-align: right;
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: black;
+  color: #18191A;
 }
 
 #hero h2 {
@@ -943,11 +943,11 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: #ddd;
 }
 
 .testimonials .owl-dot.active {
-  background-color: #3498db !important;
+  background-color: #3498db;
 }
 
 @media (max-width: 767px) {
@@ -1475,7 +1475,7 @@ section {
 
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
-    display: block !important;
+    display: block;
   }
   .breadcrumbs ol {
     display: block;
@@ -1509,11 +1509,11 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd !important;
+  background-color: #ddd;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #3498db !important;
+  background-color: #3498db;
 }
 
 .portfolio-details .portfolio-info {
