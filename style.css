@@ -58,9 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-@media screen(max-width: 768px) {
+@media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0;
+    transition-delay: 0 !important;
   }
 }
 
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down > a:after {
   content: "\ea99";
-  font-family: serif;
+  font-family: IcoFont;
   padding-left: 5px;
 }
 
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down .drop-down > a:after {
   content: "\eaa0";
-  font-family: serif;
+  font-family: IcoFont;
   position: absolute;
   right: 15px;
 }
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   font-size: 24px;
   transition: all 0.4s;
-  outline: none ;
+  outline: none !important;
   line-height: 1;
   cursor: pointer;
   text-align: right;
@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
-  font-family: serif;
+  font-family: IcoFont;
   padding-left: 10px;
   position: absolute;
   right: 15px;
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #18191A;
+  color: black;
 }
 
 #hero h2 {
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .animated {
-  animation: 2s ease-in-out infinite both;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (min-width: 1024px) {
@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@-webkit-keyframes "zoom-out" {
+@-webkit-keyframes up-down {
   0% {
     transform: translateY(10px);
   }
@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes "zoom-out" {
+@keyframes up-down {
   0% {
     transform: translateY(10px);
   }
@@ -528,8 +528,8 @@ section {
 
 .clients img {
   width: 50%;
-  -webkit-filter: (100%);
-  filter: (100%);
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
@@ -943,11 +943,11 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd;
+  background-color: #ddd !important;
 }
 
 .testimonials .owl-dot.active {
-  background-color: #3498db;
+  background-color: #3498db !important;
 }
 
 @media (max-width: 767px) {
@@ -1475,7 +1475,7 @@ section {
 
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
-    display: block;
+    display: block !important;
   }
   .breadcrumbs ol {
     display: block;
@@ -1509,11 +1509,11 @@ section {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd;
+  background-color: #ddd !important;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #3498db;
+  background-color: #3498db !important;
 }
 
 .portfolio-details .portfolio-info {
